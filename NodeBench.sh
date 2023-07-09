@@ -18,8 +18,7 @@ function yellow_color(){
 function print_help(){
     green_color
     cat <<- EOF
-		NodeBench: Vps综合测试脚本，用于在NodeSeek发表测评文章
-		Author: Lloyd@nodeseek.com
+		YABS + 回程测试 + 解锁测试
 
 	EOF
     white_color
@@ -104,7 +103,7 @@ function print_markdown_block(){
 }
 
 function yabs(){
-    fetch 'https://yabs.sh' | bash -s -- -5 -6 | print_markdown_block Yabs测试
+    fetch 'https://yabs.sh' | bash -s -- -5 | print_markdown_block Yabs测试
 }
 
 function backtrace(){
@@ -129,7 +128,6 @@ function benchsh(){
 }
 
 function main(){
-    print_help
     pre_install
 
     yabs
