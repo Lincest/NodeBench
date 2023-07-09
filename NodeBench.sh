@@ -15,6 +15,14 @@ function yellow_color(){
     echo -ne "\e[1;33m"
 }
 
+function sprunge() {
+  if [[ $1 ]]; then
+    curl -F 'sprunge=<-' "http://sprunge.us" <"$1"
+  else
+    curl -F 'sprunge=<-' "http://sprunge.us"
+  fi
+}
+
 function print_help(){
     green_color
     cat <<- EOF
@@ -157,3 +165,6 @@ function main(){
 }
 
 main
+
+upload_link = sprunge $markdown_log_file
+echo "结果已经保存到：$upload_link"
