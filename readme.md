@@ -1,3 +1,5 @@
+> Modification: 去除了 geekbench6, 防止内存小的vps直接跑炸
+
 # NodeBench
 
 为了方便NodeSeek坛友发帖，写了这个简单的整合脚本，具有以下特点
@@ -9,7 +11,7 @@
 ## 使用方法
 
 ```
-bash <(curl -sL https://raw.githubusercontent.com/LloydAsp/NodeBench/main/NodeBench.sh)
+bash <(curl -sL https://raw.githubusercontent.com/Lincest/NodeBench/main/NodeBench.sh)
 ```
 
 ## 相关脚本
