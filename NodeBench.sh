@@ -128,6 +128,7 @@ function benchsh(){
 }
 
 function main(){
+    print_help
     pre_install
 
     yabs
