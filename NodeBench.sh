@@ -134,7 +134,7 @@ function main(){
     yabs
     backtrace
     RegionRestrictionCheck
-    echo -ne "\e[1;33m是否进行单线程测速(Y/n) default Y: \e[m"
+    echo -ne "\e[1;33m是否进行单线程测速(Y/n) default n: \e[m"
     read ans
     if [ -z "$ans" ] ; then
         ans=y
