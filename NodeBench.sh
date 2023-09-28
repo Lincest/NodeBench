@@ -134,14 +134,14 @@ function main(){
     yabs
     backtrace
     RegionRestrictionCheck
-    echo -ne "\e[1;33m是否进行单线程测速(Y/n) default n: \e[m"
-    read ans
-    if [ -z "$ans" ] ; then
-        ans=y
-    fi
-    if [ "$ans" == 'y' -o "$ans" == 'Y' ] ; then
-        hyperspeed
-    fi
+    # echo -ne "\e[1;33m是否进行单线程测速(Y/n) default n: \e[m"
+    # read ans
+    # if [ -z "$ans" ] ; then
+    #     ans=y
+    # fi
+    # if [ "$ans" == 'y' -o "$ans" == 'Y' ] ; then
+    #     hyperspeed
+    # fi
     echo -ne "\e[1;33m是否补充测试bench.sh(y/N) default n: \e[m"
     read ans
     if [ "$ans" == 'y' -o "$ans" == 'Y' ] ; then
